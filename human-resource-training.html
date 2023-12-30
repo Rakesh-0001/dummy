@@ -1,0 +1,1113 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Human Resource Training</title>
+<meta name="description" content>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo/favicon.png"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/css/animate.css">
+<link rel="stylesheet" href="../assets/css/custom-animation.css">
+<link rel="stylesheet" href="../assets/css/slick.css">
+<link rel="stylesheet" href="../assets/css/nice-select.css">
+<link rel="stylesheet" href="../assets/css/flaticon_xoft.css">
+<link rel="stylesheet" href="../assets/css/swiper-bundle.css">
+<link rel="stylesheet" href="../assets/css/meanmenu.css">
+<link rel="stylesheet" href="../assets/css/font-awesome-pro.css">
+<link rel="stylesheet" href="../assets/css/magnific-popup.css">
+<link rel="stylesheet" href="../assets/css/spacing.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+           .fixed-top{
+            display: none;
+            transition: 0.2s
+        }
+        .fixed-visible{
+            display: block;
+        }
+        .nav1-link{
+            color: #263F58;
+            font-family: 'Epilogue', sans-serif;
+            font-weight: 600; 
+            font-size: 15px;
+        }
+
+        /* .it-category-item:hover + .categories{
+            border: 1px solid white;
+        } */
+        .accordion-button{
+          /* background-color: #0E2A46;
+          color: white; */
+        }
+        .course-list{
+          background-color: #E7F1FF;
+        }
+        .course-list li{
+          margin-top: 5px;
+          /* text-align: center; */
+          padding: 5px;
+          background-color: white;
+          color: #53676C;
+          width: 300px;
+        }
+
+        /* .enquiry-form{
+          position: fixed; */
+            /* transform: translateX(-50%); */
+            /* top: 170px;
+            margin-left: 10px;
+            margin-right: 50px; */
+        /* } */
+
+        .animate__animated.animate__fadeInLeft {
+  --animate-duration: 1.5s;
+}
+.animate__animated.animate__fadeIn{
+  --animate-duration: 4s;
+}
+.content-col{
+  
+}
+/* .content-col::after{content:"";
+top:0;left:0;
+width:100%;
+height:100%;
+position:absolute;
+background-color:red;
+opacity:0.5
+} */
+
+.toggler {
+  /* width: 72px; */
+  margin: 10px auto;
+}
+
+.toggler input {
+  display: none;
+}
+
+.toggler label {
+  display: block;
+  position: relative;
+  width: 72px;
+  height: 30px;
+  border: 1px solid #d6d6d6;
+  border-radius: 36px;
+  background: #e4e8e8;
+  cursor: pointer;
+}
+
+.toggler label::after {
+  display: block;
+  border-radius: 100%;
+  background-color: #d7062a;
+  content: '';
+  animation-name: toggler-size;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-out;
+  animation-direction: forwards;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
+
+.toggler label::after, .toggler label .toggler-on, .toggler label .toggler-off {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 26px;
+  height: 26px;
+  transform: translateY(-50%) translateX(-50%);
+  transition: left 0.15s ease-in-out, background-color 0.2s ease-out, width 0.15s ease-in-out, height 0.15s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+.toggler input:checked + label::after, .toggler input:checked + label .toggler-on, .toggler input:checked + label .toggler-off {
+  left: 75%;
+}
+
+.toggler input:checked + label::after {
+  background-color: #50ac5d;
+  animation-name: toggler-size2;
+}
+
+.toggler .toggler-on, .toggler .toggler-off {
+  opacity: 1;
+  z-index: 2;
+}
+
+.toggler input:checked + label .toggler-off, .toggler input:not(:checked) + label .toggler-on {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.toggler .path {
+  fill: none;
+  stroke: #fefefe;
+  stroke-width: 7px;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+@keyframes toggler-size {
+  0%, 100% {
+    width: 26px;
+    height: 26px;
+  }
+
+  50% {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@keyframes toggler-size2 {
+  0%, 100% {
+    width: 26px;
+    height: 26px;
+  }
+
+  50% {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.it-breadcrumb-title{
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -2px 2px 0 #000,
+     1px 1px 0 #000;
+}
+ 
+</style>
+</head>
+<body>
+  <div id="" class="it-header-2-area fixed-top">
+    <div class="container container-1380">
+        <div class="it-header-2-plr">
+            <div class="it-header-wrap p-relative">
+                <nav class="navbar navbar-expand-lg bg-white py-3">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img src="../img/merida website logo.png" height="35" alt=""></a>
+                      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-2 mt-sm-0 gap-4">
+                          <li class="nav-item">
+                            <a class="nav-link nav1-link" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link nav1-link" href="#about-us">About Us</a>
+                          </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav1-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> Courses </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li class="dropdown dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Web and Mobile Application Development</a>
+                                        <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
+                                            <li class="dropdown dropend">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Web Application Development</a>
+                                                <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu2">
+                                                    <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/python-full-stack-development-course.html">Python Full Stack Course</a></li>
+                                                    <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/java-full-stack-course.html">Java Full Stack Course</a></li>
+                                                    <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/mern-stack-development-course.html">Mern Stack</a></li>
+                                                    <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/mean-stack-development-course.html">Mean Stack</a></li>
+                                                    <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/react-web-development-course.html">React Web Development Course</a></li>
+                                                    <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/dot-net-full-stack-course.html">.Net Full Stack Course</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown dropend">
+                                                <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mobile Application Development</a>
+                                                <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu2">
+                                                    <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/andriod-app-developer-course.html">Android</a></li>
+                                                    <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/flutter-course.html">Flutter</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Web Development</a>
+                                        <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
+                                           
+                                                    <li><a class="dropdown-item" href="/webDevelopment/ui-ux-course.html">UI/UX Designing</a></li>
+                                                    <li><a class="dropdown-item" href="/webDevelopment/graphic-designing-course.html">Graphic Designing</a></li>
+                                                    <li><a class="dropdown-item" href="/webDevelopment/web-development-course.html">Website Development</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Cloud Computing</a>
+                                        <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
+                                           
+                                                    <li><a class="dropdown-item" href="/cloud-computing-course/microsoft-azure-course.html">Azure</a></li>
+                                                    <li><a class="dropdown-item" href="/cloud-computing-course/aws-certification-training-course.html">AWS</a></li>
+                                                    <li><a class="dropdown-item" href="/cloud-computing-course/google-certification-course.html">Google Cloud</a></li>
+                                                    <li><a class="dropdown-item" href="/cloud-computing-course/devops-course.html">Devops</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Data Science & ML</a>
+                                        <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
+                                           
+                                                    <li><a class="dropdown-item" href="/big-data-course/data-science-course.html">Data Science</a></li>
+                                                    <li><a class="dropdown-item" href="/big-data-course/machine-learning-course.html">Machine Learning</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="/digital-marketing-course.html">	Digital Marketing</a></li>
+
+                                    <li><a class="dropdown-item" href="./big-data-course/cyber-security.html">	Cyber Security & Ethical Hacking</a></li>
+
+                                    <li><a class="dropdown-item" href="./big-data-course/data-analytics-course.html">Data Analytics</a></li>
+
+                                </ul>
+                            </li>
+                        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav1-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">General Courses</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="/General-courses/onjob-training.html">On Job Training</a></li>
+                                    <li><a class="dropdown-item" href="/General-courses/spoken-english.html">Spoken English</a></li>
+                                    <li><a class="dropdown-item" href="/General-courses/tally.html">Tally</a></li>
+                                    <li><a class="dropdown-item" href="/General-courses/advanced-excel-course.html">	Advanced Excel</a></li>
+                                    <li><a class="dropdown-item" href="/General-courses/soft-skills.html">Soft Skills</a></li>
+                                    <li><a class="dropdown-item" href="/General-courses/resume-buliding.html">Resume Building & Interview Orientation Program</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav1-link">Corporate Training</a>
+                              </li>
+
+                              <li class="nav-item dropdown">
+                                <a class="nav-link nav1-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    College</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="/College/industrial-visit.html">Industrial Visits & Inplan Training</a></li>
+                                    <li><a class="dropdown-item" href="/College/internship-training.html">	Internship Training</a></li>
+                                </ul>
+                            </li>
+                          <li class="nav-item">
+                            <a class="nav-link nav1-link" href="/blogs.html">Blogs</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link nav1-link">Events</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link nav1-link">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- script -->
+<script>
+     var header = document.querySelector('.fixed-top');
+window.onscroll = function() {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        header.classList.add('fixed-visible');
+    } else {
+        header.classList.remove('fixed-visible');
+    }
+};
+</script>
+
+<button class="scroll-top scroll-to-target" data-target="html">
+    <i class="far fa-angle-double-up"></i>
+</button>
+
+<div class="body-overlay"></div>
+
+<!-- Header start -->
+<header>
+    <div class="it-header-transparent">
+
+        <div class="it-header-2-top-area it-header-2-top-height">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-8 col-lg-8 col-md-5 col-sm-4">
+                        <div class="it-header-2-top-left">
+                            <ul class="text-center text-sm-start">
+                                <li class="d-none d-lg-inline-block">
+                                    <a href="tel:568367-987-237">
+                                        <span>
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </span>  info@meridatechminds.com
+                                    </a>
+                                </li>
+                                <li class="d-none d-xl-inline-block">
+                                    <a href="#">
+                                        <span>
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </span>
+                                        No.20, Main Rd, 4th Block, Jayanagar, Bengaluru
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8 d-none d-sm-block">
+                        <div class="it-header-2-top-right text-end">
+                            <ul>
+                                <li>
+                                    <div class="it-header-2-top-social">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-skype"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="" class="it-header-2-area">
+            <div class="container container-1380">
+                <div class="it-header-2-plr">
+                    <div class="it-header-wrap p-relative">
+                        <nav class="navbar navbar-expand-lg bg-white py-3">
+                            <div class="container-fluid">
+                              <a class="navbar-brand" href="#"><img src="../img/merida website logo.png" height="35" alt=""></a>
+                              <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-2 mt-sm-0 gap-4">
+                                  <li class="nav-item">
+                                    <a class="nav-link nav1-link" href="#">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link nav1-link" href="#">About Us</a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link nav1-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> Courses </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Web and Mobile Application Development</a>
+                                            <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
+                                                <li class="dropdown dropend">
+                                                    <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Web Application Development</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu2">
+                                                        <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/python-full-stack-development-course.html">Python Full Stack Course</a></li>
+                                                        <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/java-full-stack-course.html">Java Full Stack Course</a></li>
+                                                        <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/mern-stack-development-course.html">Mern Stack</a></li>
+                                                        <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/mean-stack-development-course.html">Mean Stack</a></li>
+                                                        <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/react-web-development-course.html">React Web Development Course</a></li>
+                                                        <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/dot-net-full-stack-course.html">.Net Full Stack Course</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown dropend">
+                                                    <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mobile Application Development</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu2">
+                                                        <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/andriod-app-developer-course.html">Android</a></li>
+                                                        <li><a class="dropdown-item" href="/web-and-mobile-application-development-course/flutter-course.html">Flutter</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Web Development</a>
+                                            <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
+                                               
+                                                        <li><a class="dropdown-item" href="/webDevelopment/ui-ux-course.html">UI/UX Designing</a></li>
+                                                        <li><a class="dropdown-item" href="/webDevelopment/graphic-designing-course.html">Graphic Designing</a></li>
+                                                        <li><a class="dropdown-item" href="/webDevelopment/web-development-course.html">Website Development</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Cloud Computing</a>
+                                            <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
+                                               
+                                                        <li><a class="dropdown-item" href="/cloud-computing-course/microsoft-azure-course.html">Azure</a></li>
+                                                        <li><a class="dropdown-item" href="/cloud-computing-course/aws-certification-training-course.html">AWS</a></li>
+                                                        <li><a class="dropdown-item" href="/cloud-computing-course/google-certification-course.html">Google Cloud</a></li>
+                                                        <li><a class="dropdown-item" href="/cloud-computing-course/devops-course.html">Devops</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Data Science & ML</a>
+                                            <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
+                                               
+                                                        <li><a class="dropdown-item" href="/big-data-course/data-science-course.html">Data Science</a></li>
+                                                        <li><a class="dropdown-item" href="/big-data-course/machine-learning-course.html">Machine Learning</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a class="dropdown-item" href="/digital-marketing-course.html">	Digital Marketing</a></li>
+
+                                        <li><a class="dropdown-item" href="./big-data-course/cyber-security.html">	Cyber Security & Ethical Hacking</a></li>
+
+                                        <li><a class="dropdown-item" href="./big-data-course/data-analytics-course.html">Data Analytics</a></li>
+
+                                    </ul>
+                                </li>
+                            
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link nav1-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">General Courses</a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="/General-courses/onjob-training.html">On Job Training</a></li>
+                                        <li><a class="dropdown-item" href="/General-courses/spoken-english.html">Spoken English</a></li>
+                                        <li><a class="dropdown-item" href="/General-courses/tally.html">Tally</a></li>
+                                        <li><a class="dropdown-item" href="/General-courses/advanced-excel-course.html">	Advanced Excel</a></li>
+                                        <li><a class="dropdown-item" href="/General-courses/soft-skills.html">Soft Skills</a></li>
+                                        <li><a class="dropdown-item" href="/General-courses/resume-buliding.html">Resume Building & Interview Orientation Program</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav1-link">Corporate Training</a>
+                                  </li>
+
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link nav1-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        College</a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="/College/industrial-visit.html">Industrial Visits & Inplan Training</a></li>
+                                        <li><a class="dropdown-item" href="/College/internship-training.html">	Internship Training</a></li>
+                                    </ul>
+                                </li>
+                              <li class="nav-item">
+                                <a class="nav-link nav1-link" href="/blogs.html">Blogs</a>
+                              </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link nav1-link">Events</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link nav1-link">Contact</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</header>
+<!-- Header end -->
+<main>
+
+<div class="it-breadcrumb-area it-breadcrumb-bg" id="home" style="margin-top: 130px;height: 85vh; ">
+<div class="row w-100 h-100 z-index-3" style="background-color: #263F58;">
+<div class="col-md-7 d-flex flex-column justify-content-center content-col" >
+<div class="it-breadcrumb-content z-index-3  ms-4">
+<div class="it-breadcrumb-title-box">
+<h3 class="it-breadcrumb-title mt-5 mb-3 animate__animated animate__fadeInLeft">Human Resource Training</h3>
+</div>
+<div class="it-breadcrumb-list-wrap">
+<div class="it-breadcrumb-list">
+<span class="text-white" id="changingContent">
+  The fundamental purpose of an effective, strategic HRM program should always be to make employees feel protected, respected, and heard. The HR department collaborates with the executive team to help manage risk and compliance.
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-5 z-index-3 p-0">
+        <img src="https://content.jdmagicbox.com/comp/def_content/hr-training-centres/yxioow7lfe-hr-training-centres-7-joxvp.jpg" alt="" style="width: 100%;height: 100%;">
+
+</div>
+</div>
+</div>
+
+
+<div class="it-course-details-area pt-30 pb-100">
+<div class="container">
+<div class="row">
+<div class="col-md-8" data-aos="fade-down-right" data-aos-duration="900">
+<div class="it-course-details-wrap">
+<div class="it-evn-details-thumb mb-35">
+<!-- <img src="https://skilllearningacademy.com/wp-content/uploads/2023/05/merida-hr-training-scaled-1.webp" alt> -->
+</div>
+<div class="it-evn-details-rate mb-15">
+</div>
+<h4 class="it-evn-details-title mb-0 pb-5">Human Resource Training Complete
+Guideline</h4>
+<!-- <div class="postbox__meta">
+<span><i class="fa-light fa-file-invoice"></i>Lesson 10</span>
+<span><i class="fa-light fa-clock"></i>9.00AM- 01.00 PM</span>
+<span><i class="fa-light fa-user"></i>Students 20+</span>
+</div> -->
+<div class="tab-content it-course-details-content mt-4" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+    <div class="it-course-details-wrapper">
+      <div class="it-evn-details-text mb-40">
+      <h6 class="it-evn-details-title-sm pb-5">Nurturing Success: HRMS and the Vital Role of Human Resource Training in Organizational Excellence</h6>
+      <p>Human Resource Training will be the base for HR Department & Every successful business relies on its employees. This is why HRMS is so crucial. The HR department ensures that employees feel respected, protected, and supported in many ways. Human resource management that is exceptional guarantees that the HR department functions efficiently and evolves over time. The most basic definition of human resource management would be the department of a corporation or organization that manages the connection between employees and management. Human resource management (HRM) is the HR area in charge of these divisions. Moreover, human resources encompass various positions, responsibilities, and facets of company productivity and employee well-being.</p>
+      <p class="mt-2">Additionally, each area of human resources necessitates assertive supervision from a seasoned executive. The HRM Department of any company or organization has a lot of roles and responsibilities to perform for the company to run smoothly. Recruiting, employing, and training new employees are frequently the responsibility of an HR professional in a management role. This means that the HR department is in charge of locating individuals who fulfill the requirements for specific positions and thoroughly evaluating new personnel. Human resource managers are also expected to accept and promote employee diversity, acclimate team members to their new work environment, and ensure that employees and organizational leadership have good interactions.</p>
+      </div>
+
+      <div class="it-evn-details-text mb-4" data-aos="fade-up">
+      <h6 class="it-evn-details-title-sm pb-5">A Comprehensive Guide to HR Management: From Job Descriptions to Employee Support in this HRMS course</h6>
+      <p>1.Creating job descriptions <br>
+
+        2.Posting job openings <br>
+        
+        3.Pre-screening resumes <br>
+        
+        4.Conducting final HR round <br>
+        
+        5.Conducting final HR round <br>
+        
+        6.Employee Induction & On boarding <br>
+        
+        7.Training & Development <br>
+        
+        8.Performance Review & Appraisal <br>
+        
+        9.Continuous support to the Employees & much more
+    </p></div>
+
+      <div class="it-evn-details-text pb-5 mb-4" data-aos="fade-up">
+          <h6 class="it-evn-details-title-sm pb-5">The role of HR in ensuring safety and security</h6>
+          <p style="display: block;">The safety of all the employees, their health, and satisfaction is also something that comes under the responsibility of the HR Department. Workplace regulations, along with good HR management, effectively maintain necessary protective measures and implementations, thus providing solutions to difficulties between team members and reducing risks for the organization and its employees.  HR managers are responsible for various responsibilities, but employee well-being should always be focused on. You’ll spend a lot of time as a human resource manager talking to employees, listening to their concerns, and managing workplace relationships.</p>
+          <p class="mt-2">The fundamental purpose of an effective, strategic HRM program should always be to make employees feel protected, respected, and heard. The HR department collaborates with the executive team to help manage risk and compliance. To help manage their company’s risk, human resource managers should be well-versed in corporate law, ethics, statistics, and problem-solving. Human resource management aims to keep the organization and its employees safe.</p>
+        </div>
+
+      </div>
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+    <div class="it-course-details-wrapper">
+      <div class="it-evn-details-text mb-40">
+      <p>Curriculum</p> 
+    </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4" data-aos="fade-down-left" data-aos-duration="900">
+  <div>
+    <div class="row bg-white py-3 rounded px-2 " action="#">
+      <div class="px-0">
+        <p class="text-center mb-2 py-3 text-white fw-normal " style="background-color: #E92E20; font-size: 15px;border-radius: 5px 5px 0px 0px;">GET IN TOUCH</p>
+      </div>
+      <!-- <p class="text-start p-2 ps-4 fw-medium mb-3 text-white" style="background-color: #E92E20;font-size: 15px;">GET IN TOUCH</p> -->
+      <form action="" class="border py-3" style="border-radius: 0px 0px 5px 5px;">
+      <div class=" mb-3">
+      <input type="text" class="border-bottom " placeholder="Full Name">
+      </div>
+      <div class=" mb-3">
+      <input type="text" class="border-bottom" placeholder="Phone">
+      </div>
+      <div class="it-signup-input mb-3">
+      <input type="email" class="border-bottom" placeholder="Email">
+      </div>
+      <div class="it-signup-input mb-3">
+      <input type="text" class="border-bottom" placeholder="Subject">
+      </div>
+      <div class="toggler" style="position: relative;">
+        Use this as Whatsapp Number
+        <input id="toggler-1" name="toggler-1" type="checkbox" value="1">
+        <label for="toggler-1" style="position: absolute;left: 270px;top: 0px;">
+            <svg class="toggler-on" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2" >
+                <polyline class="path check" points="100.2,40.2 51.5,88.8 29.8,67.5"></polyline>
+            </svg>
+            <svg class="toggler-off" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2" >
+                <line class="path line" x1="34.4" y1="34.4" x2="95.8" y2="95.8"></line>
+                <line class="path line" x1="95.8" y1="34.4" x2="34.4" y2="95.8"></line>
+            </svg>
+        </label>
+    </div>
+      <div class="it-signup-btn">
+      <button class="btn btn-sm text-white p-2" style="background-color: #0AB99D;">Submit</button>
+      </div>
+    </form>
+    </div>
+  </div>
+
+<div class="mt-4" data-aos="flip-left">
+  <div class="">
+    <p class="text-center mb-2 py-3 text-white fw-normal" style="background-color: #E92E20; font-size: 15px;border-radius: 5px 5px 0px 0px;">VIEW ALL COURSES</p>
+  </div>
+  
+  <div class="accordion accordion-flush border" id="accordionFlushExample" style="border-radius: 0px 0px 5px 5px;">
+    <div class="accordion-item ">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Web Application Development
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <ul class="accordion-body course-list" style="list-style-type: none;">
+        <li><a href="/web-and-mobile-application-development-course/mean-stack-development-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Mean stack development</a></li>
+        <li><a href="/web-and-mobile-application-development-course/mern-stack-development-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Mern stack development</a></li>
+        <li><a href="/web-and-mobile-application-development-course/java-full-stack-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Java stack development</a></li>
+        <li><a href="/web-and-mobile-application-development-course/react-web-development-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>React Web Development Course</a></li>
+        <li><a href="/web-and-mobile-application-development-course/python-full-stack-development-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Python full stack</a></li>  
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Mobile Application Development
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <ul class="accordion-body course-list" style="list-style-type: none;">
+        <li><a href="/web-and-mobile-application-development-course/andriod-app-developer-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Android course</a></li>
+        <li><a href="/web-and-mobile-application-development-course/flutter-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Flutter course</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Website Development
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <ul class="accordion-body course-list" style="list-style-type: none;">
+        <li><a href="/webDevelopment/ui-ux-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>UI/UX Designing</a></li>
+        <li><a href="/webDevelopment/graphic-designing-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Graphic Designing</a></li>
+
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+         Digital Marketing
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <ul class="accordion-body course-list" style="list-style-type: none;">
+          <li><a href="/digital-marketing-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i> Digital Marketing</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+          Cloud Computing
+        </button>
+      </h2>
+      <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <ul class="accordion-body course-list" style="list-style-type: none;">
+          <li><a href="/cloud-computing-course/microsoft-azure-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Microsoft Azure</a></li>
+          <li><a href="/cloud-computing-course/aws-certification-training-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Aws</a></li>
+          <li><a href="/cloud-computing-course/google-certification-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Google cloud</a></li>
+          <li><a href="/cloud-computing-course/devops-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Devops</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+          Cyber Security & Ethical Hacking
+        </button>
+      </h2>
+      <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <ul class="accordion-body course-list" style="list-style-type: none;">
+          <li><a href="/big-data-course/cyber-security.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Cyber Security & Ethical Hacking</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+          Testing
+        </button>
+      </h2>
+      <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <ul class="accordion-body course-list" style="list-style-type: none;">
+          <li><a href="/testing/functionality-testing-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Functionality Testing</a></li>
+          <li><a href="/testing/performance-testing-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Performance Testing</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+          Data Analytics
+        </button>
+      </h2>
+      <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <ul class="accordion-body course-list" style="list-style-type: none;">
+          <li><a href="/big-data-course/data-analytics-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Data Analytics</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+          General Courses
+        </button>
+      </h2>
+      <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <ul class="accordion-body course-list" style="list-style-type: none;">
+          <li><a href="/General-courses/onjob-training.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>On Job Training</a></li>
+          <li><a href="/General-courses/spoken-english.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Spoken English</a></li>
+          <li><a href="" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Personal Development</a></li>
+          <li><a href="/General-courses/tally.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Tally</a></li>
+          <li><a href="/General-courses/advanced-excel-course.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Advanced Excel</a></li>
+          <li><a href="/General-courses/soft-skills.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Soft Skills</a></li>
+          <li><a href="/General-courses/resume-buliding.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Resume Building & Interview Orientation</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+          College
+        </button>
+      </h2>
+      <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <ul class="accordion-body course-list" style="list-style-type: none;">
+          <li><a href="/College/industrial-visit.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Industrial Visit & Inplan Training</a></li>
+          <li><a href="/College/internship-training.html" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Internship Training</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- recent blog -->
+<div class="sidebar__widget mt-55">
+  <div class="sidebar__widge-title-box">
+  <h3 class="sidebar__widget-title pb-10">Recent Blogs</h3>
+  </div>
+  <div class="sidebar__widget-content">
+  <div class="sidebar__post">
+  <div class="rc__post mb-30 d-flex align-items-start" data-aos="fade-left">
+  <div class="rc__post-thumb mr-20">
+  <a href="blog-details.html"><img src="http://127.0.0.1:5503/assets/img/blog/blog-sidebar-sm-1.jpg" alt></a>
+  </div>
+  <div class="rc__post-content">
+  <!-- <div class="rc__meta">
+  <span><i class="fa-solid fa-calendar-days"></i>14 June 2023</span>
+  </div> -->
+  <h3 class="rc__post-title">
+  <a href="../blog-details.html">Interdum velit laoreet id donec ultrices tincidunt
+  arcu.</a>
+  </h3>
+  </div>
+  </div>
+  <div class="rc__post mb-30 d-flex align-items-start" data-aos="fade-left">
+  <div class="rc__post-thumb mr-20">
+  <a href="blog-details.html"><img src="http://127.0.0.1:5503/assets/img/blog/blog-sidebar-sm-2.jpg" alt></a>
+  </div>
+  <div class="rc__post-content">
+  <h3 class="rc__post-title">
+  <a href="blog-details.html">Interdum velit laoreet id donec ultrices tincidunt
+  arcu.</a>
+  </h3>
+  </div>
+  </div>
+  <div class="rc__post mb-30 d-flex align-items-start" data-aos="fade-left">
+  <div class="rc__post-thumb mr-20">
+  <a href="blog-details.html"><img src="http://127.0.0.1:5503/assets/img/blog/blog-sidebar-sm-3.jpg" alt></a>
+  </div>
+  <div class="rc__post-content">
+  <h3 class="rc__post-title">
+  <a href="blog-details.html">Interdum velit laoreet id donec ultrices tincidunt
+  arcu.</a>
+  </h3>
+  </div>
+  </div>
+  <div class="rc__post mb-30 d-flex align-items-start" data-aos="fade-left">
+  <div class="rc__post-thumb mr-20">
+  <a href="blog-details.html"><img src="http://127.0.0.1:5503/assets/img/blog/blog-sidebar-sm-4.jpg" alt></a>
+  </div>
+  <div class="rc__post-content">
+  <h3 class="rc__post-title">
+  <a href="blog-details.html">Interdum velit laoreet id donec ultrices tincidunt
+  arcu.</a>
+  </h3>
+  </div>
+  </div>
+  <div class="rc__post mb-30 d-flex align-items-start" data-aos="fade-left">
+  <div class="rc__post-thumb mr-20">
+  <a href="blog-details.html"><img src="http://127.0.0.1:5503/assets/img/blog/blog-sidebar-sm-5.jpg" alt></a>
+  </div>
+  <div class="rc__post-content">
+  <h3 class="rc__post-title">
+  <a href="blog-details.html">Interdum velit laoreet id donec ultrices tincidunt
+  arcu.</a>
+  </h3>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+<div class="col-12">
+  <div class="it-evn-details-text pb-5 mb-4" data-aos="fade-up">
+    <h6 class="it-evn-details-title-sm pb-5">Strategic HR Leadership: Enhancing Employee Satisfaction, Productivity, and Growth</h6>
+    <p style="display: block;">As a risk management specialist, you’ll assist in managing your firm’s risk through statistical analysis, business law knowledge, and the overall enhancement of corporate policies and procedures. Managing payment and benefits for an organization’s employees is also one of HR’s key responsibilities. Employee satisfaction is maintained through time off, insurance management, and adequate remuneration. Additionally, as a human resource manager, you’ll deliver, communicate, and optimize compensation and benefits packages. Moreover, as the company expands, you’ll have the opportunity to improve these packages and employee perks as a manager.</p>
+    <p class="mt-2">Furthermore, employee salary and bonuses are frequently delegated to human resource managers. Moreover, negotiating insurance policies, making payments on time, and upgrading and developing employee benefits packages are examples of good HR leadership. One of the best ways for a firm to assure employee satisfaction, productivity, and future growth is, therefore, to have a robust HR department backed by competent leadership.</p>
+  </div>
+
+  <div class="it-evn-details-text mb-40" data-aos="fade-up">
+      <h6 class="it-evn-details-title-sm pb-5">Empowering HR Professionals for Success: HRMS Courses with Merida Skill Learning</h6>
+      <p style="display: block;">A thriving company’s basis is a happy workforce, and HR management is the glue that keeps it all together. Every organization requires an experienced, compassionate human resources manager to lead its team. Thus, learning how the Human Resource Department works is essential to keep up with the industry. Merida skill learning provides Human Resource training courses with placement in Bangalore. Moreover, we strive to offer the best possible advice and training to develop and hone your HR skills. Additionally, we have professional trainers available to guide you through each step of the process.
+      </p>
+      <p style="display: block;" class="mt-2">At Merida, we offer various programs that provide the best ways to sharpen your skills. Furthermore, we are committed to resolving all possible queries regarding the topic, as we thrive on guiding you towards your success. Lastly, we are dedicated to mentoring you in the best way possible. We also try to provide solutions regarding any HR-related job query one might have and much more, as we aim to support your growth and lead you to your dreams.</p>
+      <p class="mt-2">HR is been in demand from so many days and it will have the same demand in future as well as there is so much demand for this domain and  HR is the most important post in any company to maintain good relations in the organizations. Merida has professional who has more than 2 decades of experience in who can train you and put you under a good company on successfully completing the training program.</p>
+      </div>
+
+      <div class="it-evn-details-text mb-40" data-aos="fade-up">
+          <h6 class="it-evn-details-title-sm pb-5">HRMS duties and responsibilities</h6>
+          <p style="display: block;">1. Assisting with the creation and execution of HR initiatives and processes <br>
+
+              2.Giving policy and procedural advice <br>
+              <br>
+              This crash course provides dual certification with 100% placement guarantee and job assistance. Merida is one of the top institutes in bangalore offering computer science courses and computer courses near you in 2023 also has more than 2 decades of experience in HRMS  course and training. This best HRMS course has online course option for students and working professionals with live projects, training and development. This is one of the professional courses offered by merida, top IT training centre in bangalore also offering you the best HRMS course with job guarantee and 20 years of teaching experience with industrial experts led training. During this training the candidate will also get project certificate when they successfully finish project.</p>
+          </div>
+
+<div class="it-evn-details-text pb-5 mb-4" data-aos="fade-up">
+    <h6 class="it-evn-details-title-sm pb-5">Who can apply:</h6>
+    <p>
+        <i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>MBA <br>
+        <i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>B.SC <br>
+        <i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>BBA <br>
+ <i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Computer science <br>
+ <i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Diploma <br>
+ <i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>B COM <br>
+ <i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>career gap <br>
+ <i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>career transition <br>
+ <i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>House wives <br>
+ <i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>job seekers <br>
+There is no certain criteria to learn this course, anyone who is interested in .net full stack can directly enrol the program
+        
+    </p></div>
+
+<div class="it-evn-details-text" data-aos="fade-up">
+  <h6 class="it-evn-details-title-sm pb-5"><i class="fa-solid fa-circle-question me-2 fs-5"></i>FAQ's</h6>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item ">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed shadow-none fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefaq3" aria-expanded="false" aria-controls="flush-collapsefaq3">
+          Why did you choose to apply for this position?
+        </button>
+      </h2>
+      <div id="flush-collapsefaq3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <ul class="accordion-body" style="list-style-type: none;">
+        <li class="mb-2"><a href="" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Answer</a></li>
+      </ul>
+      </div>
+    </div>
+    <div class="accordion-item ">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed shadow-none fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefaq1" aria-expanded="false" aria-controls="flush-collapsefaq1">
+          What do you think are your biggest assets and weaknesses?
+        </button>
+      </h2>
+      <div id="flush-collapsefaq1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <ul class="accordion-body" style="list-style-type: none;">
+        <li class="mb-2"><a href="" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Answer</a></li></ul>
+      </div>
+    </div>
+    <div class="accordion-item ">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed shadow-none fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefaq2" aria-expanded="false" aria-controls="flush-collapsefaq2">
+          What kind of background do you have in this area?
+        </button>
+      </h2>
+      <div id="flush-collapsefaq2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <ul class="accordion-body" style="list-style-type: none;">
+        <li class="mb-2"><a href="" class=""><i class="fa-solid fa-angle-down fa-rotate-270 me-2"></i>Answer</a></li></ul>
+      </div>
+    </div>
+  </div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="it-newsletter-area it-newsletter-height fix p-relative theme-bg">
+<div class="it-newsletter-shape-1 d-none d-lg-block">
+<img src="assets/img/newsletter/shape-1-1.png" alt>
+</div>
+<div class="it-newsletter-shape-2 d-none d-lg-block">
+<img src="assets/img/newsletter/shape-1-2.png" alt>
+</div>
+<div class="it-newsletter-shape-3 d-none d-xl-block">
+<img src="assets/img/newsletter/shape-1-3.png" alt>
+</div>
+<div class="it-newsletter-shape-4 d-none d-xl-block">
+<img src="assets/img/newsletter/shape-1-4.png" alt>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-xl-6 col-lg-6 col-md-6">
+<div class="it-newsletter-left">
+<h4 class="it-section-title text-white pb-20">Become a Member</h4>
+<span>Enhance your skills</span>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-6">
+<div class="it-newsletter-right p-relative text-end">
+<input type="text" placeholder="Enter your email:">
+<button class="it-btn black-bg" type="submit"><span>subscribe now</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</main>
+<footer>
+
+<div class="it-footer-area it-footer-bg black-bg pt-120 pb-70" data-background="assets/img/footer/bg-1-1.jpg" id="contact">
+<div class="container">
+<div class="row">
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-50">
+<div class="it-footer-widget footer-col-1">
+<div class="it-footer-logo pb-25">
+<a href="index-html"><img src="../img/merida website logo white.png" height="50"></a>
+</div>
+<div class="it-footer-text pb-5">
+<p>
+    Touching every milestone of Learning. Unlocking and Moulding the Individuals with right attitude, Skills and Exposure. Division Merida Tech Minds PVT Ltd
+</p>
+<p>
+  Address: <br>
+  <i class="fa-solid fa-location-dot me-2"></i>20-2,Keshava Krupa Building 1st Floor, 30th cross, 10th Main Rd, 4th Block, Jayanagar, Bengaluru, Karnataka 560011</a>
+</p></div>
+<div class="it-footer-social">
+<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+<a href="#"><i class="fa-brands fa-twitter"></i></a>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-50">
+<div class="it-footer-widget footer-col-2">
+<h4 class="it-footer-title">our services:</h4>
+<div class="it-footer-list">
+<ul>
+<li><a href="#"><i class="fa-solid fa-angle-right"></i>Web development</a></li>
+<li><a href="#"><i class="fa-solid fa-angle-right"></i>UI/UX Design</a></li>
+<li><a href="#"><i class="fa-solid fa-angle-right"></i>Management</a></li>
+<li><a href="#"><i class="fa-solid fa-angle-right"></i>Digital Marketing</a></li>
+<li><a href="#"><i class="fa-solid fa-angle-right"></i>Blog News</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 mb-50">
+<div class="it-footer-widget footer-col-3">
+<h4 class="it-footer-title">Recent Posts:</h4>
+<div class="it-footer-list">
+<ul>
+<li><a href="#"><i class="fa-solid fa-angle-right"></i>FUTURE OF DIGITAL MARKETING: Key trends</a></li>
+<li><a href="#"><i class="fa-solid fa-calendar"></i> August 12, 2023</a></li>
+<li><a href="#"><i class="fa-solid fa-angle-right"></i>Python vs Java vs JavaScript vs PHP</a></li>
+<li><a href="#"><i class="fa-solid fa-calendar"></i>August 12, 2023</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 mb-50">
+    <div class="it-footer-widget footer-col-3">
+    <h4 class="it-footer-title">Contact:</h4>
+    <div class="it-footer-list">
+    <ul>
+    <!-- <li><a href="#"><i class="fa-solid fa-location"></i>20-2,Keshava Krupa Building 1st Floor, 30th cross, 10th Main Rd, 4th Block, Jayanagar, Bengaluru, Karnataka 560011</a></li> -->
+    <li><a href="#"><i class="fa-solid fa-phone"></i>(+91) 8618151685</a></li>
+    <li><a href="#"><i class="fa-solid fa-phone-volume"></i>info@meridatechminds.com</a></li>
+    <li><a href="#"><i class="fa-solid fa-clock"></i>8:00am - 8:00pm Sunday Closed</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+</footer>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+      easing: 'ease-in-out'
+  });
+</script>
+
+<!-- Content change -->
+<script>
+  var contents = ["The role of HR is vital for sailing the training and development process. HR is the person who believes the employees are the most valuable assets and indispensable sources of the organization.", 
+  "Training programs boost employee satisfaction and improve employee retention.HR is the person who believes the employees are the most valuable assets and indispensable sources of the organization."];
+    var currentIndex = 0;
+
+    function changeContent() {
+      var contentElement = document.getElementById("changingContent");
+
+      contentElement.textContent = contents[currentIndex];
+      currentIndex = (currentIndex + 1) % contents.length;
+    }
+    setInterval(changeContent, 5000);
+</script>
+<script>
+  let dropdowns = document.querySelectorAll('.dropdown-toggle')
+dropdowns.forEach((dd)=>{
+dd.addEventListener('click', function (e) {
+  var el = this.nextElementSibling
+  el.style.display = el.style.display==='block'?'none':'block'
+})
+})
+</script>
+<!-- <script>
+  let dropdowns = document.querySelectorAll('.dropdown-toggle')
+dropdowns.forEach((dd)=>{
+if(dd.addEventListener('click')){
+  show(e)
+}
+else{
+  close(e)
+}
+})
+
+function show(e) {
+  var el = this.nextElementSibling
+  el.style.display = el.style.display==='block'?'none':'block'
+}
+function close(e) {
+  var el = this.nextElementSibling
+  el.style.display = "none"
+}
+</script> -->
+</body>
+</html>
